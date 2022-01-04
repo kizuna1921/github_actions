@@ -1,0 +1,16 @@
+name: Hello, world!
+on: push
+#onでpushをトリガーに指定している。
+#ブランチの指定を行う場合は、下記のように記載
+#main ブランチだけに限定したい場合
+#on:
+#  push:
+#    braches: [main]
+
+jobs:
+  build:
+    name: Greeting
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello, world!"
+      
